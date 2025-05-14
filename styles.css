@@ -1,10 +1,13 @@
 /* style.css */
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #eac58e;
-  color: #543c3c;
+  font-family: 'Roboto', sans-serif; /* Changed to a more aesthetic font */
+  background-color: #91816a;
+  color: #ffffff;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
 }
 
 .navbar {
@@ -12,14 +15,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #baa889;
-  background-color: #51778a;
+  /*  border-bottom: 1px solid #bdab8c; */
+  background-color: #637b88;
 }
 
 .logo-img {
-  width: 40px; /* Reduced from 60px */
+  width: 100px; /* Increased size */
   height: auto;
-  max-height: 40px; /* Optional: Ensures the height doesn't exceed a certain value */
+  max-height: 100px;
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif; /* Aesthetic font for the title */
+  font-size: 2rem; /* Increased font size */
+  color: #ffffff;
+  margin: 0;
 }
 
 .nav-links {
@@ -30,7 +40,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #543c3c;
+  color: #ffffff;
   position: relative;
   font-weight: bold;
 }
@@ -55,14 +65,16 @@ body {
   padding: 5rem 2rem;
   max-width: 800px;
   margin: auto;
+  flex: 1; /* Ensures the hero section takes up remaining space */
 }
 
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #a0766e;
+  color: #ffffff;
   background-color: #51778a;
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
 }
 
 .fade-in {
