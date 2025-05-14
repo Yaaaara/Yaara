@@ -1,17 +1,24 @@
 /* style.css */
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #8c6510;
-  color: #333;
+  font-family: 'Georgia', serif;
+  background-color: #eac58e;
+  color: #543c3c;
   transition: all 0.3s ease-in-out;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #baa889;
+  background-color: #51778a;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
 }
 
 .nav-links {
@@ -22,8 +29,9 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: inherit;
+  color: #543c3c;
   position: relative;
+  font-weight: bold;
 }
 
 .nav-links a::after {
@@ -33,7 +41,7 @@ body {
   bottom: -4px;
   height: 2px;
   width: 0;
-  background: black;
+  background: #a0766e;
   transition: width 0.3s ease;
 }
 
@@ -52,7 +60,8 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #a0766e;
+  background-color: #51778a;
 }
 
 .fade-in {
